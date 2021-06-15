@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ImgFinder</title>
+</head>
+
+<body>
+
+     <!-- preloader -->
+     <div class="preloader">
+         <div class="preloader__top"><div class="preloader__text">ImgF<i class='bx bx-search-alt preloader__icon'></i>nder</div></div>
+         <div class="preloader__low"></div>
+     </div>
+
+    <!-- ---- search ---  -->
+    <section class="search">
+        <!--  search header  -->
+        <header class="search__header header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" class="header__logo"><img src="img/logo1.png" alt=""></a>
+                    <div class="header__nav">
+                        <i class='bx bx-heart header__nav-like'></i>
+                       <a class="header__nav-link" href="#search"> <i class='bx bx-search-alt header__nav-icon'></i> </a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- seacrh body  -->
+        <h1 class="search__text" id="search">
+            every find something for yourself
+        </h1>
+        <div class="search__input" >
+            <input class="search__input-search" type="text">
+            <button type="submit" class="search__btn"><i class='bx bx-search-alt search__input-icon'></i></button>
+        </div>
+        <div class="search__images">
+            <img class="search__images-arrow search__images-img" src="img/arrow.png" alt="">
+            <img class="search__images-future search__images-img" src="img/future.png" alt="">
+            <img class="search__images-sky search__images-img" src="img/sky.png" alt="">
+            <img class="search__images-gucci search__images-img" src="img/gucci.png" alt="">
+            <img class="search__images-girl search__images-img" src="img/girl.png" alt=""> 
+        </div>
+        <!-- loader  -->
+        <div class="search__loader">
+            <div class="search__loader-body">
+                <div class="load__img">
+                    <img src="img/load1.png" alt="">
+                    <div class="search__loader-anim load__img-text">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery api -->
+        <div class="search__gallery gallery">
+            <div class="container">
+                <div class="gallery__items">
+                    
+                    
+                    
+                </div>
+                <a class="gallery__btn">Load More</a>
+            </div>
+        </div>
+    </section>
+   <!-- collection -->
+   <section class="collection">
+       <div class="container">
+        <i class='bx bxs-x-circle collection__close'></i>
+        <div class="collection__title">Liked <i class='bx bx-heart collection__title-icon'></i></div>
+        <div class="collection__items">
+
+        </div>
+       </div>
+   </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
